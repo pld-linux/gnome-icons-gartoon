@@ -27,24 +27,7 @@ Gartoon jest zestawem ¶miesznie wygl±daj±cych ikonek dla GNOME.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/apps
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/devices
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/emblems
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/filesystems
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/mimetypes
-install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/stock/Xtra
-
-install index.theme $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
-install scalable/apps/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/apps
-install scalable/devices/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/devices
-install scalable/emblems/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/emblems
-install scalable/emblems/*.icon $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/emblems
-install scalable/filesystems/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/filesystems
-install scalable/filesystems/*.icon $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/filesystems
-install scalable/mimetypes/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/mimetypes
-install scalable/stock/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/stock
-install scalable/stock/iconrc $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/stock
-install scalable/stock/Xtra/*.svg $RPM_BUILD_ROOT%{_iconsdir}/%{realname}/scalable/stock/Xtra
+cp -af . $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
