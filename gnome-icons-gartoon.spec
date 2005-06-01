@@ -5,8 +5,7 @@ Summary:	Gartoon GNOME Icons
 Summary(pl):	Zestaw ikonek Gartoon dla GNOME
 Name:		gnome-icons-gartoon
 Version:	0.5
-Release:	0.1
-Epoch:		0
+Release:	1
 License:	GPL v2
 Group:		X11/Amusements
 Source0:	http://zeus.qballcow.nl/icon/paket/%{realname}-%{version}.tar.gz
