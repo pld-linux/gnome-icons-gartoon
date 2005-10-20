@@ -1,16 +1,17 @@
 #
-%define realname gartoon
+%define 	realname gartoon
 #
 Summary:	Gartoon GNOME Icons
 Summary(pl):	Zestaw ikonek Gartoon dla GNOME
 Name:		gnome-icons-gartoon
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Amusements
 Source0:	http://zeus.qballcow.nl/icon/paket/%{realname}-%{version}.tar.gz
 # Source0-md5:	19fd88682ad2f88ca85f7e0a904610fd
 URL:		http://zeus.qballcow.nl/
+BuildRequires:  gtk+2 >= 2:2.8.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +27,10 @@ Gartoon jest zestawem ¶miesznie wygl±daj±cych ikonek dla GNOME.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
+
 cp -af . $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
+
+gtk-update-icon-cache -ft $RPM_BUILD_ROOT%{_iconsdir}/%{realname}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,3 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%{realname}/scalable/stock/*.svg
 %{_iconsdir}/%{realname}/scalable/stock/Xtra/*.svg
 %{_iconsdir}/%{realname}/scalable/stock/iconrc
+%{_iconsdir}/%{realname}/icon-theme.cache
