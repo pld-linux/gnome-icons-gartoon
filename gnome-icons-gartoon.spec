@@ -2,7 +2,7 @@
 %define 	realname gartoon
 #
 Summary:	Gartoon GNOME Icons
-Summary(pl):	Zestaw ikonek Gartoon dla GNOME
+Summary(pl.UTF-8):   Zestaw ikonek Gartoon dla GNOME
 Name:		gnome-icons-gartoon
 Version:	0.5
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Gartoon is a fun looking icon pack for GNOME desktop environment.
 
-%description -l pl
-Gartoon jest zestawem ¶miesznie wygl±daj±cych ikonek dla GNOME.
+%description -l pl.UTF-8
+Gartoon jest zestawem Å›miesznie wyglÄ…dajÄ…cych ikonek dla GNOME.
 
 %prep
 %setup -q -n %{realname}
