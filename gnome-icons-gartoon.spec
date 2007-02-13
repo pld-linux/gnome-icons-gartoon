@@ -2,7 +2,7 @@
 %define 	realname gartoon
 #
 Summary:	Gartoon GNOME Icons
-Summary(pl.UTF-8):   Zestaw ikonek Gartoon dla GNOME
+Summary(pl.UTF-8):	Zestaw ikonek Gartoon dla GNOME
 Name:		gnome-icons-gartoon
 Version:	0.5
 Release:	2
