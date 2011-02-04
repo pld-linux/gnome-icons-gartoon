@@ -11,7 +11,7 @@ Group:		X11/Amusements
 Source0:	http://zeus.qballcow.nl/icon/paket/%{realname}-%{version}.tar.gz
 # Source0-md5:	19fd88682ad2f88ca85f7e0a904610fd
 URL:		http://zeus.qballcow.nl/
-BuildRequires:  gtk+2 >= 2:2.8.6
+BuildRequires:	gtk-update-icon-cache
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
